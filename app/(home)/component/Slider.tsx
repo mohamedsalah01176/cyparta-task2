@@ -21,7 +21,7 @@ export default function Slider({openSlider,setOpenSlider}:props) {
     const [open,setOpen]=useState<boolean>(false)
 
   return (
-    <div className={`fixed bottom-0 ${openSlider ?'left-0 md:left-[20px]':'left-[-160px] md:-left-[320px]'} transition-all duration-500 h-[89vh]  md:h-[93vh] rounded-t-3xl bg-white shadowSlider max-w-[160px] md:max-w-[200px] lg:max-w-[320px] w-full flex flex-col items-center`}>
+    <div className={`fixed bottom-0 ${openSlider ?'left-0 md:left-[20px]':'left-[-160px] md:-left-[320px]'} transition-all duration-500 h-[89vh]  md:h-[93vh] rounded-t-3xl bg-white shadowSlider max-w-[160px]  md:max-w-[320px] w-full flex flex-col items-center`}>
         <div className='absolute top-7 -right-[30px] bg-inherit p-2 group cursor-pointer' onClick={()=>setOpenSlider(!openSlider)} >
             <IoMdSettings className='text-2xl  group-hover:rotate-180 transition-all duration-500' />
         </div>
