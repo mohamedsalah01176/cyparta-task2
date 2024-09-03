@@ -23,7 +23,7 @@ export default function Layout({children}:any) {
       <>
         <Nav token={token}/>
           <Slider setOpenSlider={setOpenSlider} openSlider={openSlider}/>
-        <div className={` ${openSlider?'ml-[170px] md:ml-[200px] lg:ml-[370px]':'ml-10'} transition-all duration-500 mt-[10px] mb-20 lg:pr-20`}>
+        <div className={` ${openSlider?'ml-[170px] md:ml-[370px]':'ml-10'} transition-all duration-500 mt-[10px] mb-20 lg:pr-20`}>
           {path.includes("edieProfile")?
           null:
           <NavSection path={path.slice(1,)} />
