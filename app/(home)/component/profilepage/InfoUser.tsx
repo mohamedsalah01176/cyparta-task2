@@ -21,7 +21,7 @@ export default function InfoUser({infoData}:props) {
         <div className=" relative" >
             <FieldUserInfo title1="Work's hours " val1="No Found" title2="Salary/Hour" val2="No Found"/>
             <div className="absolute top-4 right-0 md:right-[15%]">
-                <h2 className="text-[#ccc] text-lg">Totale Salary</h2>
+                <h2 className="text-red-600 text-lg ">Total Salary</h2>
                 <p className="text-lg mt-1">No Found</p>
             </div>
         </div>
